@@ -1,0 +1,110 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Security Scan Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #f8fafc;
+                color: #0f172a;
+                margin: 0;
+                padding: 32px;
+            }
+
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                background: white;
+                border-radius: 16px;
+                padding: 24px;
+                box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            .subtitle {
+                color: #475569;
+                margin-bottom: 24px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 16px;
+            }
+
+            th, td {
+                padding: 12px;
+                border-bottom: 1px solid #e2e8f0;
+                text-align: left;
+                vertical-align: top;
+            }
+
+            th {
+                background: #f1f5f9;
+            }
+
+            .open {
+                color: #15803d;
+                font-weight: bold;
+            }
+
+            .closed {
+                color: #b91c1c;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Security Scan Report</h1>
+            <p class="subtitle">Objetivo analizado: <strong>scanme.nmap.org</strong></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Puerto</th>
+                        <th>Estado</th>
+                        <th>Servicio</th>
+                        <th>Banner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td>22</td>
+            <td class="open">open</td>
+            <td>SSH</td>
+            <td>SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13</td>
+        </tr>
+        
+        <tr>
+            <td>80</td>
+            <td class="open">open</td>
+            <td>HTTP</td>
+            <td>HTTP/1.1 200 OK
+Date: Mon, 23 Mar 2026 09:25:38 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html</td>
+        </tr>
+        
+        <tr>
+            <td>443</td>
+            <td class="closed">closed</td>
+            <td>HTTPS</td>
+            <td>-</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+    

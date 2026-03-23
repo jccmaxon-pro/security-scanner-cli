@@ -1,0 +1,10 @@
+target,port,status,service,banner
+scanme.nmap.org,22,open,SSH,SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
+scanme.nmap.org,80,open,HTTP,"HTTP/1.1 200 OK
+Date: Mon, 23 Mar 2026 09:25:38 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html"
+scanme.nmap.org,443,closed,HTTPS,
