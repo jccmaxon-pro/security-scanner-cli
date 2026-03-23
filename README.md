@@ -50,11 +50,12 @@ security-scanner/
 ## Instalación
 
 Clona el repositorio y crea un entorno virtual:
-
+```bash
 git clone <TU_REPO_URL>
 cd security-scanner
 python3 -m venv venv
 source venv/bin/activate
+```
 
 Este proyecto no requiere dependencias externas adicionales para la versión actual, pero puedes dejar el entorno preparado igualmente.
 
@@ -62,26 +63,31 @@ Este proyecto no requiere dependencias externas adicionales para la versión act
 ## Uso
 
 1. Escaneo básico con puertos por defecto
+```bash
 python3 -m app.main --target 127.0.0.1
-
+```
 2. Escaneo de puertos concretos
+```bash
 python3 -m app.main --target 127.0.0.1 --ports 22 80 443
-
+```
 3. Escaneo por rango
+```bash
 python3 -m app.main --target 127.0.0.1 --range 20 100
-
+```
 4. Nombre personalizado de salida
+```bash
 python3 -m app.main --target 127.0.0.1 --range 20 100 --output-name scan_local
+```
+5. Ajustar timeout
+```bash
+python3 -m app.main --target 127.0.0.1 --range 1 1024 --timeout 0.5
+```
 
 Esto generará:
-
+```bash
 output/scan_local.csv
 output/scan_local.html
-
-
-5. Ajustar timeout
-python3 -m app.main --target 127.0.0.1 --range 1 1024 --timeout 0.5
-
+```
 
 ## Salida generada
 
@@ -109,7 +115,7 @@ tabla detallada de puertos y banners
 Servicios comunes detectados
 
 Actualmente la herramienta asocia estos puertos con servicios frecuentes:
-
+```bash
 21 → FTP
 22 → SSH
 23 → Telnet
@@ -124,6 +130,7 @@ Actualmente la herramienta asocia estos puertos con servicios frecuentes:
 5432 → PostgreSQL
 6379 → Redis
 8080 → HTTP-Alt
+```
 
 - Funcionalidades implementadas
 
