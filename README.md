@@ -45,7 +45,7 @@ security-scanner/
 ├── output/
 ├── requirements.txt
 └── README.md
-
+```
 
 ## Instalación
 
