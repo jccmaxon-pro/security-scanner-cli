@@ -1,4 +1,0 @@
-target,port,status,service,banner
-127.0.0.1,22,closed,SSH,
-127.0.0.1,80,closed,HTTP,
-127.0.0.1,443,closed,HTTPS,
